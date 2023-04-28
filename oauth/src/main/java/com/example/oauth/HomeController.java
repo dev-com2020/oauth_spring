@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class HomeController {
 
     private final YouTube youTube;
+
     public HomeController(YouTube youTube) {
         this.youTube = youTube;
     }

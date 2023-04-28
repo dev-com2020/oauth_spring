@@ -3,7 +3,8 @@ package com.example.oauth;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.service.annotation.GetExchange;
 
-interface YouTube {
+
+public interface YouTube {
     @GetExchange("/search?part=snippet&type=video")
     SearchListResponse channelVideos(
             @RequestParam String channelId,

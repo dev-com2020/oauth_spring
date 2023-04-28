@@ -1,15 +1,17 @@
 <html>
 <head>
     <title>Youtube API</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 
 {{#channelVideos.items}}
     <tr>
-        <td>{{id.videos}}</td>
+        <td>{{id.videoId}}</td>
         <td>{{snippet.publishedAt}}</td>
         <td><a href="https://www.youtube.com/watch?v=
-        {{id.videoId}}" target="_blank"><img src="{{snippet.thumbnail.url}}"></a></td>
+        {{id.videoId}}" target="_blank">
+            <img src="{{snippet.thumbnail.url}}"></a></td>
     <td>{{snippet.title}}</td>
     <td>{{snippet.shortDescription}}</td>
     </tr>
